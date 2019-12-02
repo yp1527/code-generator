@@ -2,6 +2,7 @@ package ${basePackage}.service;
 
 import ${basePackage}.entity.${changeTableName};
 import ${basePackage}.controller.vo.${changeTableName}QueryVo;
+import ${basePackage}.service.common.IContractBaseService;
 import org.springframework.data.domain.Page;
 import com.ecmp.vo.OperateResult;
 

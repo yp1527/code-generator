@@ -11,7 +11,7 @@ import com.ecmp.vo.OperateResult;
 import org.springframework.util.StringUtils;
 import ${basePackage}.exception.BusinessException;
 import com.ecmp.core.dao.BaseEntityDao;
-import ${basePackage}.service.ContractBaseService;
+import ${basePackage}.service.common.ContractBaseService;
 import ${basePackage}.util.ObjectUpdateTool;
 import ${basePackage}.util.PageQueryUtil;
 import ${basePackage}.util.SearchUtil;
