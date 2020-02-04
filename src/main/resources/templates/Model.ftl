@@ -47,7 +47,7 @@ public class ${changeTableName} extends BaseEntity{
     private Integer ${model.changeColumnName?uncap_first};
     </#if>
     <#if (model.columnType = 'TINYINT' || model.columnType = 'tinyint')>
-        private Boolean ${model.humpName?uncap_first};
+    private Boolean ${model.changeColumnName?uncap_first};
     </#if>
     <#if (model.columnType = 'DATETIME' || model.columnType = 'DATE') >
     private Date ${model.changeColumnName?uncap_first};
