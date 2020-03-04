@@ -3,6 +3,7 @@ import ${basePackage}.entity.${changeTableName};
 import io.swagger.annotations.ApiModelProperty;
 import org.springframework.beans.BeanUtils;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import ${basePackage}.annotation.SearchAnnotation;
 <#if model_column?exists>
     <#list model_column as model>
@@ -27,6 +28,7 @@ import java.util.Date;
  * @date ${date}
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class ${changeTableName}QueryVo extends SearchBaseVo{
 
 <#if model_column?exists>

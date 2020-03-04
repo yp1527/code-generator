@@ -5,6 +5,7 @@ import org.springframework.beans.BeanUtils;
 import javax.validation.constraints.NotBlank;
 import org.hibernate.validator.constraints.Length;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 <#if model_column?exists>
     <#list model_column as model>
         <#if (model.columnType = 'DECIMAL')>
@@ -28,6 +29,7 @@ import java.util.Date;
  * @date ${date}
  */
 @Data
+@EqualsAndHashCode(callSuper = true)
 public class ${changeTableName}Vo extends BaseVo<${changeTableName}>{
 
 <#if model_column?exists>
